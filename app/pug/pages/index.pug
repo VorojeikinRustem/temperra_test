@@ -1,0 +1,16 @@
+extends ../layouts/layout
+
+include ../mixins
+include ../../blocks/header/header
+include ../../blocks/general/general
+include ../../blocks/knowledge/knowledge
+include ../../blocks/form/form
+include ../../blocks/author/author
+include ../../blocks/footer/footer
+
+
+block content
+    .main
+        +author()
+        +knowledge()
+        +footer()

@@ -1,0 +1,14 @@
+mixin author()
+    +b.author&attributes(attributes)
+        +e.title Вебинар ведёт
+        +img("ava.png").author__img
+        +e.name Влада Евсеева
+        +e.desc
+            | Автор и ведущая известных женских тренингов и радиопрограммы «Леди на миллион».  Телеведущая, ведущая светских и официальных мероприятий. Основатель центра эстетического образования и личностного роста. Продюсер ивент агентства и Издатель светского обозревателя
+        +e.icons
+            +e.A.link_vk(href="https://vk.com/temperra")
+                +icon("vk")
+            +e.A.link_facebook(href="https://vk.com/temperra")
+                +icon("facebook")
+            +e.A.link_twitter(href="https://vk.com/temperra")
+                +icon("twitter")

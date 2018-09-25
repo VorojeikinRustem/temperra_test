@@ -1,0 +1,10 @@
+//- SPRITE
+//- ================================================
+mixin icon(icon)
+    +b.SVG.icon&attributes(attributes)
+        use(xlink:href="./icons/icons.svg#" + icon)
+
+//- PICTURE
+//- ================================================
+mixin img(url)
+    img(src= "./img/" + url)&attributes(attributes)

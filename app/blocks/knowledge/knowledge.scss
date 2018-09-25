@@ -1,0 +1,75 @@
+.knowledge {
+  background-color: rgb(243, 243, 243);
+  padding: 50px;
+  width: 100%;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info {
+    max-width: 65%;
+    padding-right: 30px;
+  }
+  &__title {
+    font-family: Lobster;
+    font-size: 48px;
+  }
+  &__items {
+    font-family: "Blogger Sans";
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+
+    .icon {
+      fill: rgb(255, 0, 0);
+      width: 51px;
+      height: 51px;
+      min-width: 51px;
+      min-height: 51px;
+      margin-right: 15px;
+    }
+  }
+
+  @media (max-width: $md) {
+    padding: 40px 15px;
+  }
+  @media (max-width: $md) and (min-width: $sm) {
+    &__items {
+      font-size: 18px;
+    }
+    &__item {
+      .icon {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+        min-height: 35px;
+      }
+    }
+  }
+  @media (max-width: $sm) {
+    .container {
+      flex-direction: column;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__info {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 0 30px;
+    }
+  }
+  @media (max-width: $xs) {
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

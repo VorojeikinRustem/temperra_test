@@ -1,0 +1,34 @@
+@import "vars.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Blogger Sans", serif;
+}
+
+ul, ol {
+  margin: 0;
+}
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+a {
+  outline: 0 none;
+}
+@media (max-width: $md) {
+  .main {
+    flex-wrap: wrap;
+  }
+
+  .container {
+    width: 100%;
+  }
+}

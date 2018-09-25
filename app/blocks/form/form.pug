@@ -1,0 +1,19 @@
+
+mixin form()
+    -
+        var fields = [
+            "Введите ваше имя *",
+            "Email (пришлем ссылку на участие): *",
+            "Телефон (напомним по sms): "
+        ];
+
+    +b.form&attributes(attributes)
+        +e.header
+            +e.title Запишитесь на<br> бесплатный мастер-класс
+            +e.subtitle и получите в подарок мини-книгу "100 секретов Леди на миллион"
+        +e.fields
+            each field in fields
+                +e.field
+                    +e.label #{field}
+                    +e.INPUT.input
+            +e.BUTTON.btn Отправить заявку

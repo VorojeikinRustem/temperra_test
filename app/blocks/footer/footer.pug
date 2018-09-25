@@ -1,0 +1,23 @@
+mixin footer()
+    +b.footer&attributes(attributes)
+        +e.top
+            +e.copy © 2018 ИП Стародубцева А.С.  - Все права защищены.
+            +e.right
+                +e.UL.contacts
+                    each contact in ["hello@evseeva.online", "8 800 55 12 12 5", "Присоединяйтесь"]
+                        +e.LI.contact #{contact}
+
+                +e.UL.social
+                    +e.LI.item
+                        +e.A.icon(href="https://vk.com/temperra")
+                            +icon("vk")
+                    +e.LI.item
+                        +e.A.icon(href="https://vk.com/temperra")
+                            +icon("facebook")
+                    +e.LI.item
+                        +e.A.icon(href="https://vk.com/temperra")
+                            +icon("twitter")
+
+        +e.bottom
+            +e.A.link(href="#") Политика конфиденциальности
+            +e.A.link(href="#") Договор оферта
