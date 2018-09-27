@@ -1,11 +1,5 @@
 mixin header()
     +b.header&attributes(attributes)
-        .container
+        +e.container.container
             +img("logo.png").header__logo
-            +e.UL.items
-                +e.LI.item
-                    +e.A.link_active(href="#") Сводка
-                +e.LI.item
-                    +e.A.link(href="#") Устройства
-                +e.LI.item
-                    +e.A.link(href="#") Сценарии
+            +e.date 19 сентября 20:00 МСК

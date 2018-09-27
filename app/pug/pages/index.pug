@@ -2,6 +2,7 @@ extends ../layouts/layout
 
 include ../mixins
 include ../../blocks/header/header
+include ../../blocks/banner/banner
 include ../../blocks/general/general
 include ../../blocks/knowledge/knowledge
 include ../../blocks/form/form
@@ -11,6 +12,8 @@ include ../../blocks/footer/footer
 
 block content
     .main
+        +header()
+        +banner
         +author()
         +knowledge()
         +footer()
