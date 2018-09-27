@@ -3,6 +3,13 @@
   font-family: "Blogger Sans";
   max-width: 34%;
   min-width: 350px;
+  &__iframe {
+    min-height: 440px;
+    height: 440px;
+    iframe {
+      min-height: 430px !important;
+    }
+  }
   &__header {
     text-align: center;
     padding: 25px 25px 15px;
